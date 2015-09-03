@@ -1,4 +1,5 @@
 #!/bin/bash
+#Written by burdz
 script_dir=$(PWD)
 chain_dir=$(PWD)
 
