@@ -12,7 +12,7 @@ read paths
 printf "Is this a cloudfront certificate? if so enter the path else enter 'n': "
 read cloudfrontpath
 
-if [ "$cloudfrontpath" = "n"] 
+if [ "$cloudfrontpath" = "n" ] 
 then
 	if [ "$paths" = "y" ]
 	then
