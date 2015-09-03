@@ -7,7 +7,7 @@ printf "Certificate name?: "
 read certname
 printf "Intermediate/Certificate chain name?: "
 read chain
-printf "Is the path $script_dir/ ?(y or n): "
+printf "Is the correct directory - $script_dir/ ?(y or n): "
 read paths
 printf "Is this a cloudfront certificate? if so enter the path else enter 'n': "
 read cloudfrontpath
