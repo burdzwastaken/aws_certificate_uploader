@@ -37,8 +37,9 @@ then
 		read newpaths
 		exec aws iam --profile $awsprofile upload-server-certificate --server-certificate-name $certname --certificate-body file://$newpaths/$certname/$certname.crt --private-key file://$newpaths/$certname/$certname.key --certificate-chain file://$chain_dir/$chain.crt --path $cloudfrontpath #This assumes chain lives in the same file as this script
 		fi
+	fi
 else
-if [ "$cloudfrontpath" = "n" ]
+	if [ "$cloudfrontpath" = "n" ]
         then
                 if [ "$paths" = "y" ]
                 then
@@ -57,5 +58,5 @@ if [ "$cloudfrontpath" = "n" ]
                 read newpaths
                 exec aws iam --profile $awsprofile upload-server-certificate --server-certificate-name $certname --certificate-body file://$newpaths/$certname/$certname.crt --private-key file://$newpaths/$certname/$certname.key --certificate-chain file://$newchain_dir/$chain.crt --path $cloudfrontpath #This assumes chain lives in the same file as this script
                 fi
-
+	fi
 fi
