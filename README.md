@@ -8,8 +8,8 @@ A script to upload server certificates without typing in the command every time.
 
 and that your ~/.aws/credentials is set up like this: 
 
-[mburdan-prod]
-aws_access_key_id = **access_key**
+	#[mburdan-prod]
+	#aws_access_key_id = **access_key**
 	#aws_secret_access_key = **secret_access_key**
 	#[mburdan-dev]
 	#aws_access_key_id = **access_key**
